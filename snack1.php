@@ -57,9 +57,17 @@
 
     <!-- MAIN -->
     <main>
-        <section>
-
-        </section>
+        <h1>Tabellone Partite</h1>
+        <?php for ($i = 0; $i < count($matches); $i++) { 
+            $prima_squadra = $matches[$i]["Squadra 1"];
+            $seconda_squadra = $matches[$i]["Squadra 2"];
+            $punti_squadra1 = $matches[$i]["Punteggio 1"];
+            $punti_squadra2 = $matches[$i]["Punteggio 2"];
+        ?>
+            <p>
+                <?php echo $prima_squadra; ?> - <?php echo $seconda_squadra; ?> | <?php echo $punti_squadra1; ?> - <?php echo $punti_squadra2; ?>
+            </p>
+        <?php } ?>
     </main>
 
 </body>
