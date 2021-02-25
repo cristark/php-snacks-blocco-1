@@ -52,6 +52,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
     <title>PhP Snack 1</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
@@ -64,9 +65,12 @@
             $punti_squadra1 = $matches[$i]["Punteggio 1"];
             $punti_squadra2 = $matches[$i]["Punteggio 2"];
         ?>
-            <p>
-                <?php echo $prima_squadra; ?> - <?php echo $seconda_squadra; ?> | <?php echo $punti_squadra1; ?> - <?php echo $punti_squadra2; ?>
-            </p>
+            <div class="row">
+                <p><?php echo $prima_squadra; ?> -</p>
+                <p><?php echo $seconda_squadra; ?> |</p>
+                <p><?php echo $punti_squadra1; ?> -</p>
+                <p><?php echo $punti_squadra2; ?></p>
+            </div>
         <?php } ?>
     </main>
 

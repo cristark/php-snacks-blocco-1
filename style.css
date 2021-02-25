@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  text-align: center;
+  font-family: sans-serif;
+  background: #ebebd3;
+}
+
+main {
+  padding: 50px;
+}
+
+h1 {
+  font-size: 3em;
+  text-transform: uppercase;
+  margin-bottom: 50px;
+  color: #0d5c63;
+}
+
+.row {
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px auto;
+  background: #0d5c63;
+  padding: 15px 0;
+  border-radius: 5px;
+}
+
+.row p {
+  margin-right: 5px;
+  color: #fff;
+  font-size: 1.5em;
+}
